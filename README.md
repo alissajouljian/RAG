@@ -28,7 +28,7 @@ concert-tour-helper/
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 Install all dependencies using:
 
@@ -36,7 +36,7 @@ Install all dependencies using:
 pip install -r requirements.txt
 ```
 
-> 💡 You must also set up the `.env` file with your API keys before running the application.
+>  You must also set up the `.env` file with your API keys before running the application.
 
 ---
 
@@ -66,7 +66,7 @@ When running via CLI:
 
 ---
 
-## 📌 How It Works
+##  How It Works
 
 1. **Document Ingestion**  
    Files (.txt ) are parsed, checked for concert-related content, and summarized using Gemini. Embeddings are stored in ChromaDB.
@@ -79,7 +79,7 @@ When running via CLI:
 
 ---
 
-## 📊 Summarized Data Format
+##  Summarized Data Format
 
 The system produces structured summaries with:
 - Artist name(s)

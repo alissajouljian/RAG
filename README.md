@@ -92,22 +92,4 @@ The system produces structured summaries with:
 
 Stored in JSON at `reports/report.json`.
 
----
-
-##  Optimization Ideas
-
-- **Chunk Size & Overlap**  
-  Experiment with chunking (e.g., 500–1000 characters) for better retrieval granularity.
-
-- **Model Selection**  
-  Test both Gemini and OpenAI for summary vs. answer quality; fine-tune prompts for each.
-
-- **Search Fallback Logic**  
-  Consider ranking online results with cosine similarity against original queries.
-
-- **Categorization Pipeline**  
-  Future versions could auto-categorize tours by region, genre, or ticket availability.
-
-- **Streaming Answers in UI**  
-  Add streaming output to the Streamlit interface for real-time feedback.
 

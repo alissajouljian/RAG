@@ -1,0 +1,11 @@
+langchain
+langchain-google-genai
+langchain-community
+google-search-results
+streamlit
+python-dotenv
+PyPDF2
+python-docx
+chromadb
+openai
+tqdm

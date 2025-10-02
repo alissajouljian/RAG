@@ -11,28 +11,33 @@ This project allows you to:
 
 ---
 
-## **Table of Contents**
 
-1. [Project Setup](#project-setup)
-2. [Environment Variables](#environment-variables)
-3. [Install Dependencies](#install-dependencies)
-4. [Running the CLI](#running-the-cli)
-5. [Running the Streamlit App](#running-the-streamlit-app)
-6. [Adding Documents](#adding-documents)
-7. [Searching Questions](#searching-questions)
-8. [Project Structure](#project-structure)
-9. [Git Setup & Push](#git-setup--push)
-10. [Notes](#notes)
+## **Project Structure**
 
----
-
+```
+concert-tour-helper/
+│
+├─ main.py                  # CLI entrypoint
+├─ streamlit_app.py         # Streamlit web app
+├─ rag_pipeline.py          # RAG pipeline (embedding, vector DB, LLM)
+├─ ingestion.py             # Document ingestion and summarization
+├─ online_lookup.py         # Online search wrapper with Gemini + SERP API
+├─ utils/
+│  ├─ doc_loader.py         # Load txt, pdf, docx
+│  └─ summarizer.py         # Summarize document with Gemini LLM
+├─ chroma_db/               # Local vector DB (auto-generated)
+├─ reports/
+│  └─ report.json           # Document ingestion reports
+├─ pyproject.toml           # Poetry project config
+└─ .env                     # API keys (not in repo)
+```
 ## **Project Setup**
 
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone <repo-url>
+cd <repo-name>
 ```
 
 2. Make sure you have **Python 3.11+** installed.
@@ -177,24 +182,4 @@ search: [your question here]
    * Local Chroma vector DB (first)
    * Online search + Gemini LLM (fallback)
 
----
 
-## **Project Structure**
-
-```
-concert-tour-helper/
-│
-├─ main.py                  # CLI entrypoint
-├─ streamlit_app.py         # Streamlit web app
-├─ rag_pipeline.py          # RAG pipeline (embedding, vector DB, LLM)
-├─ ingestion.py             # Document ingestion and summarization
-├─ online_lookup.py         # Online search wrapper with Gemini + SERP API
-├─ utils/
-│  ├─ doc_loader.py         # Load txt, pdf, docx
-│  └─ summarizer.py         # Summarize document with Gemini LLM
-├─ chroma_db/               # Local vector DB (auto-generated)
-├─ reports/
-│  └─ report.json           # Document ingestion reports
-├─ pyproject.toml           # Poetry project config
-└─ .env                     # API keys (not in repo)
-```

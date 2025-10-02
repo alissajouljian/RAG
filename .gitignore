@@ -1,0 +1,47 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.venv/
+venv/
+env/
+.env
+
+# ------------------------------
+# Poetry / pyproject.toml
+# ------------------------------
+.poetry/
+.cache/pypoetry/
+.virtualenvs/
+
+# ------------------------------
+# Chroma Vector DB (local storage)
+# ------------------------------
+chroma_db/
+
+# ------------------------------
+# Reports / temporary files
+# ------------------------------
+reports/
+*.log
+*.tmp
+*.temp
+
+# ------------------------------
+# OS files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# IDE files
+# ------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

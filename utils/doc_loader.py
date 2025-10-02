@@ -1,8 +1,15 @@
+# utilss/doc_loader.py
 import os
 from PyPDF2 import PdfReader
 from docx import Document as DocxDocument
 
+# ------------------------------
+# Load text from supported file formats
+# ------------------------------
 def load_document(path: str) -> str:
+    """
+    Load text from a file (.txt, .pdf, .docx) and return as string.
+    """
     ext = os.path.splitext(path)[1].lower()
 
     if ext == ".txt":
@@ -18,4 +25,4 @@ def load_document(path: str) -> str:
         return "\n".join(para.text for para in doc.paragraphs)
 
     else:
-        raise ValueError("Unsupported file format")
+        raise ValueError(f"Unsupported file format: {ext}")

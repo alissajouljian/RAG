@@ -1,12 +1,6 @@
-Absolutely! I will write a **very detailed, step-by-step README** for your project, assuming a beginner can follow it, while still being comprehensive for a senior-level ML engineer like yourself. I’ll also explain how to use **Poetry (`pyproject.toml`)**, run the code, add documents, search, and finally push to GitHub.
-
-Here’s a full README:
-
----
-
 # 🎵 Concert Tour Helper (RAG Pipeline)
 
-A **senior-level Retrieval-Augmented Generation (RAG) application** to manage concert tour documents and answer questions using a combination of **local embeddings** and **online search**. Built using **LangChain**, **Chroma vector database**, **Sentence Transformers**, **OpenAI GPT**, and **Google Gemini LLM**.
+A **Retrieval-Augmented Generation (RAG) application** to manage concert tour documents and answer questions using a combination of **embeddings** or  and **online search**. Built using **LangChain**, **Chroma vector database**, **Sentence Transformers**, **OpenAI GPT**, and **Google Gemini LLM**.
 
 This project allows you to:
 
